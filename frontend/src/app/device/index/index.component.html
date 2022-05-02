@@ -1,0 +1,27 @@
+<div class="row py-3">
+
+<app-create></app-create>
+<br/><br/>
+<div class="col col-md-6 mx-auto">
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Category</th>
+      <th scope="col">Color</th>
+      <th scope="col">Part Number</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let row of device">
+      <th>{{row.id}}</th>
+      <td>{{row.Category_fk}}</td>
+      <td>{{row.Color}}</td>
+      <td>{{row.PartNumber}}</td>
+      <td><button (click)="deleteCategory(row.id)" class="btn btn-sm btn-outline-danger" type="button">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>

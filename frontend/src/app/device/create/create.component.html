@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="text-center py-3">Register Device</h4>
+
+      <form class="form mt-4" [formGroup]="form" (submit)="cadastrar()">
+
+
+      <div class="d-grid gap-2 py-3 col col-md-6 mx-auto">
+
+        <select formControlName="Category_fk" name="Category_fk" class="form-control" >
+          <option value="" selected="selected">Select Category</option>
+          <option *ngFor = "let row of category" [value]="row.id">{{row.Name}}</option>
+        </select>
+
+      </div>
+
+      <div class="d-grid gap-2 py-3 col col-md-6 mx-auto">
+          <input placeholder="Color" class="form-control" formControlName="Color" />
+      </div>
+
+      <div class="d-grid gap-2 py-3 col col-md-6 mx-auto">
+          <input placeholder="PartNumber" class="form-control" formControlName="PartNumber" />
+      </div>
+
+      <div class="d-grid gap-2 py-3 col col-md-6 mx-auto">
+          <button class="btn btn-primary btn-block" type="submit" >Register</button>
+      </div>
+
+     </form>
+
+
+  </div>
