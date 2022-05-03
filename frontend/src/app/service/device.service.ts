@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Device } from '../interface/device';
 
 
-const baseUrl = 'http://localhost:3000/api/device';
+const baseUrl = 'https://eldorado-desafio-final-backend.herokuapp.com/api/device';
 
 @Injectable({
   providedIn: 'root'

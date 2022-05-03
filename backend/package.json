@@ -5,7 +5,7 @@
   "main": "./api/index.js",
   "scripts": {
     "swagger-autogen": "node swagger.js",
-    "start": "nodemon ./api/index.js --ignore __tests__",
+    "start": "node ./api/index.js --ignore __tests__",
     "database": "npx sequelize-cli db:create",
     "migrate": "npx sequelize-cli db:migrate",
     "seed": "npx sequelize-cli db:seed:all",

@@ -32,8 +32,7 @@
             ],
             "styles": [
               "src/styles.sass",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/font-awesome/CSS/font-awesome.CSS"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },

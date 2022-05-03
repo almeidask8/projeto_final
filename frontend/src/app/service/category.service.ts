@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Category } from '../interface/category';
 
-const baseUrl = 'http://localhost:3000/api/category';
+const baseUrl = 'https://eldorado-desafio-final-backend.herokuapp.com/api/category';
 
 @Injectable({
   providedIn: 'root'

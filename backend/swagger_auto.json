@@ -3,9 +3,9 @@
   "info": {
     "version": "1.0.0",
     "title": "REST API",
-    "description": "API COM TOKEN - PROJETO ELDORADOTECH"
+    "description": "API USANDO TOKEN - PROJETO ELDORADO"
   },
-  "host": "localhost:3000",
+  "host": "eldorado-desafio-final-backend.herokuapp.com",
   "basePath": "/",
   "components": {},
   "security": [
@@ -14,12 +14,12 @@
     }
   ],
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api/signin": {
       "post": {
-        "description": "Fazer login - token",
+        "description": "Login - token",
         "sumary": "USUARIO",
         "parameters": [
           {
@@ -56,7 +56,7 @@
     },
     "/api/signup": {
       "post": {
-        "description": "Cadastro de Usuario",
+        "description": "Register User",
         "parameters": [
           {
             "name": "body",
@@ -89,8 +89,8 @@
     },
     "/api/category": {
       "post": {
-        "description": "Cadastro de Category",
-        "sumary": "Cadastro de Category",
+        "description": "Register Category",
+        "sumary": "Register Category",
         "parameters": [
           {
             "name": "body",
@@ -115,8 +115,8 @@
         }
       },
       "get": {
-        "description": "Lista de Category",
-        "sumary": "Lista de Category",
+        "description": "List Category",
+        "sumary": "List Category",
         "parameters": [],
         "responses": {
           "200": {
@@ -130,8 +130,8 @@
     },
     "/api/category/{id}": {
       "delete": {
-        "description": "Delete de Category",
-        "sumary": "Delete de Category",
+        "description": "Remove Category",
+        "sumary": "Remove Category",
         "parameters": [
           {
             "name": "id",
@@ -152,8 +152,8 @@
     },
     "/api/device": {
       "post": {
-        "description": "Cadastro de Device",
-        "sumary": "Cadastro de Device",
+        "description": "Register Device",
+        "sumary": "Register Device",
         "parameters": [
           {
             "name": "body",
@@ -185,7 +185,7 @@
       },
       "get": {
         "description": "Category - Read",
-        "sumary": "Lista de Device",
+        "sumary": "Device List",
         "parameters": [],
         "responses": {
           "200": {
@@ -199,7 +199,7 @@
     },
     "/api/device/{id}": {
       "delete": {
-        "description": "Category - Delete",
+        "description": "Delete Category",
         "parameters": [
           {
             "name": "id",

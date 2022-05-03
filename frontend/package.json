@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng s",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "deploy:ghdocs": "ng build --configuration production --output-path docs --base-href /angular-material-schematics/",
+    "heroku-postbuild": "ng build --configuration production"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +23,7 @@
     "@angular/router": "~13.3.0",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.1.3",
+    "express": "^4.18.1",
     "font-awesome": "^4.7.0",
     "jwt-decode": "^3.1.2",
     "rxjs": "~7.5.0",
